@@ -1,0 +1,770 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="description"
+        content="SLIIT R26-IT-019: four AI research components for coconut germplasm, land utilization, WCLWD severity and bilingual disease advisory.">
+    <title>Coconut Intelligence | R26-IT-019 Research</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+
+<body><a class="skip" href="#main">Skip to content</a>
+    <header><a class="brand" href="#home"><img class="brandlogo" src="assets/images/coconut-logo.png"
+                alt="Coconut research project logo"><span
+                class="brandwords">COCONUT<small>INTELLIGENCE</small></span></a>
+        <nav aria-label="Main navigation"><a href="#home">Home</a><a href="#domain">Domain</a><a
+                href="#milestones">Milestones</a><a href="#documents">Documents</a><a href="#presentations">Slides</a><a
+                href="#about">About us</a><a href="#contact">Contact us</a></nav><a class="navcta"
+            href="#documents">Read the research ↗</a>
+    </header>
+    <main id="main">
+        <section id="home" class="hero wrap">
+            <div class="herocopy">
+                <div class="eyebrow"><span class="dot"></span> SLIIT RESEARCH · R26-IT-019</div>
+                <h1>Intelligence for<br>a <em>thriving</em><br>coconut future.</h1>
+                <p class="lead">From the diversity of a single palm to the potential of an entire plantation. Four AI
+                    research components, connected through one coconut-focused platform.</p>
+                <div class="actions"><a class="button" href="#domain">Explore our research <span>↗</span></a><a
+                        class="textlink" href="documents/research-paper.pdf">View research paper ↗</a></div>
+                <div class="herofoot"><span>01—04 / CONNECTED RESEARCH</span><span>Developed in Sri Lanka</span></div>
+            </div>
+            <div class="herovis logohero">
+                <div class="orb orbit-one"></div>
+                <div class="orb orbit-two"></div><span class="hero-tag tag-one">AI × AGRICULTURE</span><img
+                    src="assets/images/coconut-logo.png" width="1728" height="928"
+                    alt="Project logo combining a coconut palm, Sri Lanka, agricultural land and intelligence networks"><span
+                    class="hero-tag tag-two">ROOTED IN SRI LANKA</span>
+                <div class="floatcard"><span class="dot"></span> FOUR PERSPECTIVES. ONE PLATFORM.<strong>Observe.
+                        Understand. Support.</strong></div><span class="vertical">CONSERVATION MEETS COMPUTATION</span>
+            </div>
+        </section>
+        <div class="ribbon"><span>GERMPLASM</span><i>✳</i><span>LAND UTILIZATION</span><i>✳</i><span>LEAF WILT
+                SEVERITY</span><i>✳</i><span>BILINGUAL ADVISORY</span></div>
+        <section class="wrap intro">
+            <div>
+                <p class="eyebrow">THE PROJECT AT A GLANCE</p>
+                <h2>Better information.<br><em>Better possibilities.</em></h2>
+            </div>
+            <div>
+                <p>Our research investigates an AI-enabled coconut land utilization, WCLWD severity assessment,
+                    germplasm identification and community intelligence advisory system. It addresses four information
+                    needs that are usually handled separately through manual observation and specialist judgement.</p>
+                <p>The Coconut Diagnostics Suite brings independently developed modules into a shared web interface.
+                    Each accepts its own input, uses its own dataset and returns its own result. Integration happens at
+                    the application level.</p>
+                <p class="note">Research prototype: field, expert and external validation remain necessary before
+                    operational use. There is no combined system accuracy.</p>
+            </div>
+        </section>
+        <section id="domain" class="wrap">
+            <div class="sectionhead">
+                <div>
+                    <p class="eyebrow">01 / RESEARCH DOMAIN</p>
+                    <h2>Four components.<br><em>A shared purpose.</em></h2>
+                </div>
+                <p>Discover the methods, evidence and open questions behind each independent workflow.</p>
+            </div>
+            <div class="modulegrid"><a class="modulecard" href="#germplasm"><span class="cardnum">01
+                        <span>↗</span></span>
+                    <h3>Germplasm identification</h3>
+                    <p>Recognize the diversity worth conserving.</p>
+                    <div class="metric"><strong>96.53%</strong><span>Episodic evaluation accuracy</span></div><small>428
+                        field images · 3 germplasm classes</small>
+                </a><a class="modulecard" href="#land"><span class="cardnum">02 <span>↗</span></span>
+                    <h3>Aerial land utilization</h3>
+                    <p>Find space for the next generation.</p>
+                    <div class="metric"><strong>83.5%</strong><span>Detector mAP@50</span></div><small>279 aerial images
+                        · 10,398 bounding boxes</small>
+                </a><a class="modulecard" href="#wclwd"><span class="cardnum">03 <span>↗</span></span>
+                    <h3>WCLWD severity assessment</h3>
+                    <p>Make leaf symptoms more interpretable.</p>
+                    <div class="metric"><strong>98.79%</strong><span>Held-out classification accuracy</span></div>
+                    <small>3,354 deduplicated images · 497 test images</small>
+                </a><a class="modulecard" href="#advisory"><span class="cardnum">04 <span>↗</span></span>
+                    <h3>Disease identification & advisory</h3>
+                    <p>Connect an image to grounded guidance.</p>
+                    <div class="metric"><strong>98.89%</strong><span>Held-out classification accuracy</span></div>
+                    <small>4,807 source images · 16 knowledge documents</small>
+                </a></div>
+            <div class="domainpanels">
+                <article>
+                    <p class="eyebrow">LITERATURE SURVEY</p>
+                    <h3>Building on established research</h3>
+                    <p>Transfer learning with EfficientNet and Prototypical Networks supports recognition with limited
+                        labelled images. YOLO-based aerial detection supports palm counting; vegetation indices and
+                        distance transforms add occupancy and free-space information.</p>
+                    <p>WCLWD research motivates image classification and severity assessment. Grad-CAM, Otsu
+                        thresholding and GrabCut support explainable pseudo-segmentation. Mahalanobis screening and
+                        retrieval-augmented generation support unfamiliar-input handling and document-grounded advisory
+                        responses.</p>
+                    <details>
+                        <summary>Selected literature from the research paper</summary>
+                        <ul>
+                            <li>De Silva et al. (2023): phytoplasma detection and systemic movement in coconut leaf wilt
+                                disease.</li>
+                            <li>Vidhanaarachchi et al. (2025): early diagnosis and severity assessment of WCLWD and
+                                coconut caterpillar infestation.</li>
+                            <li>Tan &amp; Le (2019): EfficientNet model scaling.</li>
+                            <li>Snell et al. (2017): Prototypical Networks for few-shot learning.</li>
+                            <li>Jintasuttisak et al. (2022): drone-based date palm detection.</li>
+                            <li>Selvaraju et al. (2017): Grad-CAM visual explanations.</li>
+                            <li>Lee et al. (2018): Mahalanobis-based out-of-distribution detection.</li>
+                            <li>Lewis et al. (2020): retrieval-augmented generation.</li>
+                        </ul><a href="documents/research-paper.pdf">Read the paper and full references ↗</a>
+                    </details>
+                </article>
+                <article>
+                    <p class="eyebrow">RESEARCH GAP &amp; PROBLEM</p>
+                    <h3>Fragmented tools, connected needs</h3>
+                    <p>Germplasm identification requires specialist knowledge; land inspection is time-consuming; WCLWD
+                        can resemble other leaf disorders; management knowledge is dispersed across extension services
+                        and documents.</p>
+                    <p>The project addresses limited application-level integration of these four coconut-management
+                        needs. Its contribution is the connected platform and component workflows, rather than the
+                        invention of the underlying algorithms.</p>
+                    <p class="note">Prior AI-based coconut research exists. The research gap is integration and
+                        context-specific implementation.</p>
+                </article>
+                <article>
+                    <p class="eyebrow">RESEARCH OBJECTIVES</p>
+                    <h3>What we set out to investigate</h3>
+                    <ol>
+                        <li>Develop and evaluate few-shot coconut germplasm identification with visual explanations.
+                        </li>
+                        <li>Estimate aerial image occupancy and approximate additional planting capacity.</li>
+                        <li>Connect WCLWD classification, explanation, pseudo-segmentation and computational severity
+                            scoring.</li>
+                        <li>Combine disease classification, unfamiliar-input screening and bilingual knowledge-grounded
+                            advisory.</li>
+                        <li>Integrate all four modules through a common web platform and evaluate them independently.
+                        </li>
+                    </ol>
+                </article>
+                <article>
+                    <p class="eyebrow">METHODOLOGY</p>
+                    <h3>Independent models. Shared access.</h3>
+                    <div class="pipeline"><span>Image / query input</span><b>↓</b><span>Shared React
+                            interface</span><b>↓</b><span>Node.js / Express + Flask</span><b>↓</b><span>One of four
+                            independent AI modules</span><b>↓</b><span>Results, explanations &amp; MySQL storage</span>
+                    </div>
+                </article>
+            </div>
+            <article id="germplasm" class="component">
+                <div class="componenttitle"><span class="bigindex">01</span>
+                    <div>
+                        <p class="eyebrow">COMPONENT DEEP DIVE</p>
+                        <h3>Germplasm identification</h3>
+                        <p>Dwarf, King Coconut and Tall germplasm are identified from field photographs collected at
+                            CRI, Bandirippuwa. A few-shot approach addresses limited labelled examples.</p>
+                    </div>
+                </div>
+                <div class="detailgrid">
+                    <div>
+                        <h4>Method &amp; outputs</h4>
+                        <p>RGB conversion → 224 × 224 resize → ImageNet normalization → EfficientNet-B0 →
+                            512-dimensional embeddings → class prototypes → cosine similarity → class probabilities and
+                            Grad-CAM.</p>
+                        <h4>Data &amp; evaluation</h4>
+                        <p>3-way, 8-shot, 5-query episodes; 341 training and 87 validation-pool images. Training used 40
+                            epochs, with 40 training and 15 validation episodes per epoch.</p>
+                    </div>
+                    <div>
+                        <h4>Reported results</h4>
+                        <p>724 of 750 query instances were classified correctly across 50 evaluation episodes. Best
+                            episodic validation accuracy: 98.67%. Overall precision, recall and F1: 0.97.</p>
+                        <h4>Limits &amp; next steps</h4>
+                        <p>Single-site, imbalanced dataset: Dwarf 118, King Coconut 67, Tall 243. Repeated episodic
+                            queries are not 750 unique external images. Multi-location and independent external testing
+                            are needed.</p>
+                    </div>
+                </div><a class="textlink" href="#domain">↑ Back to component index</a>
+            </article>
+            <article id="land" class="component">
+                <div class="componenttitle"><span class="bigindex">02</span>
+                    <div>
+                        <p class="eyebrow">COMPONENT DEEP DIVE</p>
+                        <h3>Aerial land utilization</h3>
+                        <p>Aerial Palm/Tree detection is transformed into canopy occupancy, available image area and
+                            approximate additional planting positions.</p>
+                    </div>
+                </div>
+                <div class="detailgrid">
+                    <div>
+                        <h4>Method &amp; outputs</h4>
+                        <p>YOLO11n detections → Shapely circular buffers → Excess Green vegetation mask → elliptical
+                            constraints and morphological cleanup → Euclidean Distance Transform → local maxima → greedy
+                            spacing-constrained placement.</p>
+                        <h4>Data &amp; evaluation</h4>
+                        <p>237 training and 42 validation images; 50 epochs, 640 × 640 inputs, batch size 8. Public
+                            Aerial Images of Palm Trees dataset.</p>
+                    </div>
+                    <div>
+                        <h4>Reported results</h4>
+                        <p>Precision 78.2%; recall 82.4%; mAP@50–95 48.9%. One demonstration image had 86 detections;
+                            refined utilization 23.81%, raw available area 76.19%; 172 candidates reduced to
+                            approximately 55 positions.</p>
+                        <h4>Limits &amp; next steps</h4>
+                        <p>All area and spacing estimates are in pixel space. The demonstration uses a 148.2-pixel
+                            spacing proxy. No ground sampling distance, georeferencing, metric GIS or agronomic field
+                            validation is incorporated.</p>
+                    </div>
+                </div><a class="textlink" href="#domain">↑ Back to component index</a>
+            </article>
+            <article id="wclwd" class="component">
+                <div class="componenttitle"><span class="bigindex">03</span>
+                    <div>
+                        <p class="eyebrow">COMPONENT DEEP DIVE</p>
+                        <h3>WCLWD severity assessment</h3>
+                        <p>Classify Healthy Leaves, WCLWD Drying of Leaflets, WCLWD Flaccidity and WCLWD Yellowing, then
+                            visualize influential regions and estimate computational severity.</p>
+                    </div>
+                </div>
+                <div class="detailgrid">
+                    <div>
+                        <h4>Method &amp; outputs</h4>
+                        <p>Denoising and LAB/CLAHE enhancement → EfficientNet-B0 → Grad-CAM → image-specific Otsu
+                            thresholding → GrabCut and morphology → pseudo-mask → calibrated weighted Disease Severity
+                            Index.</p>
+                        <h4>Data &amp; evaluation</h4>
+                        <p>Perceptual hashing and group-based splits reduce near-duplicate leakage. Approximate 70/15/15
+                            split; minority Healthy-class oversampling is restricted to training.</p>
+                    </div>
+                    <div>
+                        <h4>Reported results</h4>
+                        <p>Weighted precision 98.80%, recall 98.79%, F1 98.77%. DSI = 0.20A + 0.20B + 0.20C + 0.15D +
+                            0.25 × affected-area fraction, using calibrated descriptors. Mild ≤25; Moderate >25–50;
+                            Severe >50–75; Critical >75. Healthy predictions receive DSI 0.</p>
+                        <h4>Limits &amp; next steps</h4>
+                        <p>Pseudo-masks are not manually annotated ground truth. Severity descriptors, weights and
+                            thresholds need expert agronomic validation. Classification accuracy does not establish
+                            severity-score accuracy.</p>
+                    </div>
+                </div><a class="textlink" href="#domain">↑ Back to component index</a>
+            </article>
+            <article id="advisory" class="component">
+                <div class="componenttitle"><span class="bigindex">04</span>
+                    <div>
+                        <p class="eyebrow">COMPONENT DEEP DIVE</p>
+                        <h3>Disease identification & advisory</h3>
+                        <p>Identify CCI Caterpillars, Gray Leaf Spot, Healthy Leaves and Leaf Rot. Screen unfamiliar
+                            images and provide English/Sinhala management guidance through curated document retrieval.
+                        </p>
+                    </div>
+                </div>
+                <div class="detailgrid">
+                    <div>
+                        <h4>Method &amp; outputs</h4>
+                        <p>EfficientNet-B0 → 256-dimensional features → Mahalanobis OOD screen. Query → language
+                            detection → BGE embeddings → Pinecone top-5 retrieval → GPT-4o-mini through OpenRouter →
+                            bilingual response with conversational memory.</p>
+                        <h4>Data &amp; evaluation</h4>
+                        <p>Original split: 3,364 training, 720 validation and 723 test images. Training balanced to
+                            8,000 images. Knowledge base: 1,606 chunks, 900 characters with 150 overlap;
+                            BGE-large-en-v1.5 uses 1,024 dimensions.</p>
+                    </div>
+                    <div>
+                        <h4>Reported results</h4>
+                        <p>Test loss 0.3841. OOD threshold 594.53 at the 99th percentile; 0.97% of known in-distribution
+                            test images were flagged. RAG grounds responses in curated coconut disease documents.</p>
+                        <h4>Limits &amp; next steps</h4>
+                        <p>No representative external OOD evaluation is documented. Retrieval quality, factuality and
+                            Sinhala translation require formal evaluation. The final advisory mechanism is RAG;
+                            crowdsourcing was an earlier concept.</p>
+                    </div>
+                </div><a class="textlink" href="#domain">↑ Back to component index</a>
+            </article>
+            <div class="tech">
+                <p class="eyebrow">TECHNOLOGIES USED</p>
+                <h3>The tools behind the research platform</h3>
+                <div class="chips">
+                    <span>React</span><span>Node.js</span><span>Express</span><span>Flask</span><span>MySQL</span><span>Python</span><span>EfficientNet-B0</span><span>Prototypical
+                        Networks</span><span>YOLO11n</span><span>Grad-CAM</span><span>OpenCV</span><span>Shapely</span><span>Otsu
+                        / GrabCut</span><span>Mahalanobis distance</span><span>BGE
+                        embeddings</span><span>Pinecone</span><span>GPT-4o-mini / OpenRouter</span></div>
+                <p>These technologies describe the research application. This portfolio itself uses HTML and CSS, with
+                    no build tools or external assets required.</p>
+            </div>
+        </section>
+        <section id="milestones" class="tinted">
+            <div class="wrap">
+                <div class="sectionhead">
+                    <div>
+                        <p class="eyebrow">02 / PROJECT MILESTONES</p>
+                        <h2>A journey from<br><em>question to evidence.</em></h2>
+                    </div>
+                    <p>Choose an assessment below to view its purpose, date and allocated marks.</p>
+                </div>
+                <div class="assessmentgrid">
+                    <article><span class="assessmentmark">10%</span>
+                        <h3>Project Proposal</h3>
+                        <p>Topic selection, literature review, problem definition and objectives.</p>
+                        <p class="assessmentdate">16–18 March 2026</p><span class="assessmentstatus">Completed</span>
+                    </article>
+                    <article><span class="assessmentmark">15%</span>
+                        <h3>Progress Presentation 1</h3>
+                        <p>System design, methodology and initial implementation.</p>
+                        <p class="assessmentdate">11–13 May 2026</p><span class="assessmentstatus">Completed</span>
+                    </article>
+                    <article><span class="assessmentmark">15%</span>
+                        <h3>Progress Presentation 2</h3>
+                        <p>Core modules, interim evaluation and integration progress.</p>
+                        <p class="assessmentdate">31 August–02 September 2026</p><span
+                            class="assessmentstatus">Completed</span>
+                    </article>
+                    <article><span class="assessmentmark">30%</span>
+                        <h3>Final Assessment</h3>
+                        <p>Complete system demonstration and integrated module evaluation.</p>
+                        <p class="assessmentdate">19–21 October 2026</p><span class="assessmentstatus">In
+                            progress</span>
+                    </article>
+                    <article><span class="assessmentmark">30%</span>
+                        <h3>Final Report & Viva</h3>
+                        <p>Comprehensive research reports and oral examination.</p>
+                        <p class="assessmentdate">19–21 October 2026 · viva; 28 October · final thesis</p><span
+                            class="assessmentstatus">Upcoming</span>
+                    </article>
+                </div>
+                <p class="note">Assessment weights and statuses follow your supplied assessment screenshot. Exact
+                    deadlines follow your official project timeline; the final assessment is aligned with the final
+                    presentation window.</p>
+                <div class="scheduleintro"><span class="scheduleyear">2026</span>
+                    <div>
+                        <h3>Regular Batch · RP Project</h3>
+                        <p>Official deadlines from the supplied project timeline.</p>
+                    </div>
+                </div>
+                <details class="milestonepicker">
+                    <summary>Choose a milestone <span>⌄</span></summary>
+                    <div class="milestoneoptions"><a href="#milestone0">Proposal Submission ↗</a><a
+                            href="#milestone1">Proposal Presentation ↗</a><a href="#milestone2">Check List submission
+                            ↗</a><a href="#milestone3">Progress Presentation 1 ↗</a><a href="#milestone4">Progress
+                            Presentation 2 ↗</a><a href="#milestone5">Draft Thesis submission ↗</a><a
+                            href="#milestone6">Website Submission ↗</a><a href="#milestone7">Final Check List submission
+                            ↗</a><a href="#milestone8">Final Presentation and Viva ↗</a><a href="#milestone9">Website
+                            evaluation & Logbook submission ↗</a><a href="#milestone10">Research Paper submission
+                            ↗</a><a href="#milestone11">Final Thesis Submission ↗</a><a href="#milestone12">Research
+                            Paper publication evidence submission ↗</a></div>
+                </details>
+                <div class="timeline">
+                    <article id="milestone0" class=""><span class="timelineindex">01</span>
+                        <div>
+                            <p class="deadline">15 March 2026</p>
+                            <h3>Proposal Submission</h3>
+                            <p>Submit the proposed scope, research problem, objectives, literature survey and
+                                methodology.</p>
+                            <div class="milestonedata"><span>Deadline / submission item · see assessment weights
+                                    above</span></div>
+                        </div><span class="milestoneicon">↗</span>
+                    </article>
+                    <article id="milestone1" class=""><span class="timelineindex">02</span>
+                        <div>
+                            <p class="deadline">16–18 March 2026</p>
+                            <h3>Proposal Presentation</h3>
+                            <p>Present and discuss the proposed research and individual component responsibilities.</p>
+                            <div class="milestonedata"><span>Deadline / submission item · see assessment weights
+                                    above</span></div>
+                        </div><span class="milestoneicon">↗</span>
+                    </article>
+                    <article id="milestone2" class=""><span class="timelineindex">03</span>
+                        <div>
+                            <p class="deadline">13 May 2026</p>
+                            <h3>Check List submission</h3>
+                            <p>Submit the project checklist for the first progress review.</p>
+                            <div class="milestonedata"><span>Deadline / submission item · see assessment weights
+                                    above</span></div>
+                        </div><span class="milestoneicon">↗</span>
+                    </article>
+                    <article id="milestone3" class=""><span class="timelineindex">04</span>
+                        <div>
+                            <p class="deadline">11–13 May 2026</p>
+                            <h3>Progress Presentation 1</h3>
+                            <p>Present early implementation, data preparation and model development.</p>
+                            <div class="milestonedata"><span>Deadline / submission item · see assessment weights
+                                    above</span></div>
+                        </div><span class="milestoneicon">↗</span>
+                    </article>
+                    <article id="milestone4" class=""><span class="timelineindex">05</span>
+                        <div>
+                            <p class="deadline">31 August–02 September 2026</p>
+                            <h3>Progress Presentation 2</h3>
+                            <p>Demonstrate component progress, integration and preliminary evaluation.</p>
+                            <div class="milestonedata"><span>Deadline / submission item · see assessment weights
+                                    above</span></div>
+                        </div><span class="milestoneicon">↗</span>
+                    </article>
+                    <article id="milestone5" class=""><span class="timelineindex">06</span>
+                        <div>
+                            <p class="deadline">11 October 2026</p>
+                            <h3>Draft Thesis submission</h3>
+                            <p>Submit draft individual theses for review.</p>
+                            <div class="milestonedata"><span>Deadline / submission item · see assessment weights
+                                    above</span></div>
+                        </div><span class="milestoneicon">↗</span>
+                    </article>
+                    <article id="milestone6" class=""><span class="timelineindex">07</span>
+                        <div>
+                            <p class="deadline">11 October 2026</p>
+                            <h3>Website Submission</h3>
+                            <p>Submit the project research portfolio website.</p>
+                            <div class="milestonedata"><span>Deadline / submission item · see assessment weights
+                                    above</span></div>
+                        </div><span class="milestoneicon">↗</span>
+                    </article>
+                    <article id="milestone7" class=""><span class="timelineindex">08</span>
+                        <div>
+                            <p class="deadline">14 October 2026</p>
+                            <h3>Final Check List submission</h3>
+                            <p>Submit the final checklist of project deliverables.</p>
+                            <div class="milestonedata"><span>Deadline / submission item · see assessment weights
+                                    above</span></div>
+                        </div><span class="milestoneicon">↗</span>
+                    </article>
+                    <article id="milestone8" class=""><span class="timelineindex">09</span>
+                        <div>
+                            <p class="deadline">19–21 October 2026</p>
+                            <h3>Final Presentation and Viva</h3>
+                            <p>Demonstrate the integrated prototype and defend individual research contributions.</p>
+                            <div class="milestonedata"><span>Deadline / submission item · see assessment weights
+                                    above</span></div>
+                        </div><span class="milestoneicon">↗</span>
+                    </article>
+                    <article id="milestone9" class=""><span class="timelineindex">10</span>
+                        <div>
+                            <p class="deadline">19–21 October 2026</p>
+                            <h3>Website evaluation &amp; Logbook submission</h3>
+                            <p>Present the research website for evaluation and submit the project logbook.</p>
+                            <div class="milestonedata"><span>Deadline / submission item · see assessment weights
+                                    above</span></div>
+                        </div><span class="milestoneicon">↗</span>
+                    </article>
+                    <article id="milestone10" class=""><span class="timelineindex">11</span>
+                        <div>
+                            <p class="deadline">23 October 2026</p>
+                            <h3>Research Paper submission</h3>
+                            <p>Submit the consolidated group research paper.</p>
+                            <div class="milestonedata"><span>Deadline / submission item · see assessment weights
+                                    above</span></div>
+                        </div><span class="milestoneicon">↗</span>
+                    </article>
+                    <article id="milestone11" class=""><span class="timelineindex">12</span>
+                        <div>
+                            <p class="deadline">28 October 2026</p>
+                            <h3>Final Thesis Submission</h3>
+                            <p>Submit the final thesis documents.</p>
+                            <div class="milestonedata"><span>Deadline / submission item · see assessment weights
+                                    above</span></div>
+                        </div><span class="milestoneicon">↗</span>
+                    </article>
+                    <article id="milestone12" class=""><span class="timelineindex">13</span>
+                        <div>
+                            <p class="deadline">01 December 2026</p>
+                            <h3>Research Paper publication evidence submission</h3>
+                            <p>Submit evidence of research paper publication.</p>
+                            <div class="milestonedata"><span>Deadline / submission item · see assessment weights
+                                    above</span></div>
+                        </div><span class="milestoneicon">↗</span>
+                    </article>
+                </div>
+                <p class="note">Dates are transcribed from the provided 2026 Regular Batch RP Project timeline. The five
+                    assessment weights and statuses are shown above. Other entries are submission deadlines rather than
+                    separately weighted assessments.</p>
+            </div>
+        </section>
+        <section id="documents" class="wrap">
+            <div class="sectionhead">
+                <div>
+                    <p class="eyebrow">03 / DOCUMENT LIBRARY</p>
+                    <h2>The work.<br><em>Open for exploration.</em></h2>
+                </div>
+                <p>Read the research paper and four supplied individual theses. Other required documents are reserved
+                    below.</p>
+            </div>
+            <div class="doclist"><a href="documents/research-paper.pdf"><span>Research paper · group
+                        study</span><small>PDF <b>↓</b></small></a><a
+                    href="documents/germplasm-thesis.pdf"><span>Individual thesis · germplasm
+                        identification</span><small>PDF <b>↓</b></small></a><a
+                    href="documents/land-utilization-thesis.pdf"><span>Individual thesis · aerial land
+                        utilization</span><small>PDF <b>↓</b></small></a><a
+                    href="documents/wclwd-thesis.docx"><span>Individual thesis draft · WCLWD
+                        assessment</span><small>DOCX <b>↓</b></small></a><a
+                    href="documents/advisory-thesis.docx"><span>Individual thesis draft · disease &
+                        advisory</span><small>DOCX <b>↓</b></small></a><a
+                    href="documents/project-charter-taf.pdf"><span>Project Charter · Topic Assessment Form
+                        (TAF)</span><small>PDF <b>↓</b></small></a><a href="#pending-documents"><span>Proposal Document
+                        · one document</span><small><b>○</b></small></a></div>
+            
+        </section>
+        <section id="presentations" class="tinted">
+            <div class="wrap">
+                <div class="sectionhead">
+                    <div>
+                        <p class="eyebrow">04 / PRESENTATION SLIDES</p>
+                        <h2>Sharing progress.<br><em>One milestone at a time.</em></h2>
+                    </div>
+                    <p>Space for past and future presentation decks.</p>
+                </div>
+                <div class="slidegrid">
+                    <article><span class="cardnum">01 / PRESENTATION</span>
+                        <div class="slideart"><span>✳</span></div>
+                        <h3>Proposal presentation</h3>
+                        <p class="slidedate">16–18 March 2026</p>
+                        <p class="status">PDF · 30 pages · Available</p><a class="button slidebutton"
+                            href="documents/proposal-presentation.pdf">View slides ↗</a><a class="downloadlink"
+                            href="documents/proposal-presentation.pdf" download>Download PDF ↓</a>
+                    </article>
+                    <article><span class="cardnum">02 / PRESENTATION</span>
+                        <div class="slideart"><span>✳</span></div>
+                        <h3>Progress presentation 1</h3>
+                        <p class="slidedate">11–13 May 2026</p>
+                        <p class="status">PDF · 21 pages · Available</p><a class="button slidebutton"
+                            href="documents/progress-presentation-1.pdf">View slides ↗</a><a class="downloadlink"
+                            href="documents/progress-presentation-1.pdf" download>Download PDF ↓</a>
+                    </article>
+                    <article><span class="cardnum">03 / PRESENTATION</span>
+                        <div class="slideart"><span>✳</span></div>
+                        <h3>Progress presentation 2</h3>
+                        <p class="slidedate">31 August–02 September 2026</p>
+                        <p class="status">PDF · 9 pages · Available</p><a class="button slidebutton"
+                            href="documents/progress-presentation-2.pdf">View slides ↗</a><a class="downloadlink"
+                            href="documents/progress-presentation-2.pdf" download>Download PDF ↓</a>
+                    </article>
+                    <article><span class="cardnum">04 / PRESENTATION</span>
+                        <div class="slideart"><span>✳</span></div>
+                        <h3>Final presentation</h3>
+                        <p class="slidedate">19–21 October 2026</p>
+                        <p class="status">Upcoming · slides awaiting upload</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+        <section id="about" class="wrap">
+            <div class="sectionhead">
+                <div>
+                    <p class="eyebrow">05 / ABOUT US</p>
+                    <h2>People behind<br><em>the possibilities.</em></h2>
+                </div>
+                <p>R26-IT-019 · Sri Lanka Institute of Information Technology<br>Four individual contributions to one
+                    shared research project.</p>
+            </div>
+            <div class="teamgrid">
+                
+                <article>
+                    <div class="portrait"><img src="assets/images/Hasun.png"
+                            alt="Member 1 portrait awaiting supplied photograph"><span class="portraitbadge">MEMBER
+                            01</span></div>
+                    <p class="eyebrow">Aerial land utilization</p>
+                    <h3>Wijerathna W.M.H.N</h3>
+                    <p>Student ID awaiting confirmation</p>
+                    <p class="status">Email awaiting confirmation</p>
+                </article>
+                <article>
+                    <div class="portrait"><img src="assets/images/Ruvi.png"
+                            alt="Member 2 portrait supplied photograph"><span class="portraitbadge">MEMBER
+                            02</span></div>
+                    <p class="eyebrow">Germplasm identification</p>
+                    <h3>Randeniya A.A.S.L.B.R.P.W.R.C</h3>
+                    <p>IT22236500</p>
+                    <p class="status">Email awaiting confirmation</p>
+                </article>
+                <article>
+                    <div class="portrait"><img src="assets/images/Sandali.jpeg"
+                            alt="Member 3 portrait awaiting supplied photograph"><span class="portraitbadge">MEMBER
+                            03</span></div>
+                    <p class="eyebrow">WCLWD severity assessment</p>
+                    <h3>Malashani W.A.M.S</h3>
+                    <p>Student ID awaiting confirmation</p>
+                    <p class="status">Email awaiting confirmation</p>
+                </article>
+                <article>
+                    <div class="portrait"><img src="assets/images/Isuri.png"
+                            alt="Member 4 portrait awaiting supplied photograph"><span class="portraitbadge">MEMBER
+                            04</span></div>
+                    <p class="eyebrow">Disease identification & advisory</p>
+                    <h3>Harischandra R.D.I.D</h3>
+                    <p>Student ID awaiting confirmation</p>
+                    <p class="status">Email awaiting confirmation</p>
+                </article>
+            </div>
+            <div class="supervisors">
+                <p class="eyebrow">GUIDANCE &amp; COLLABORATION</p>
+                <h3>Experience that shapes our research.</h3>
+                <div class="guidancegrid">
+                    <article>
+                        <div class="portrait"><img src="assets/images/Sanvitha Madam.jfif"
+                                alt="Supervisor photograph awaiting upload"><span class="portraitbadge">RESEARCH
+                                GUIDANCE</span></div>
+                        <p class="eyebrow">Supervisor</p>
+                        <h4>Prof. Sanvitha Kasthuriarchchi</h4>
+                        <p class="status">Faculty of Computing, Sri Lanka Institute of Information Technology </p>
+                    </article>
+                    <article>
+                        <div class="portrait"><img src="assets/images/Karthiga Madam.jfif"
+                                alt="Co-supervisor photograph awaiting upload"><span class="portraitbadge">RESEARCH
+                                GUIDANCE</span></div>
+                        <p class="eyebrow">Co-supervisor</p>
+                        <h4>Ms. Karthiga Rajendran</h4>
+                        <p class="status">Faculty of Computing, Sri Lanka Institute of Information Technology</p>
+                    </article>
+                    <article>
+                        <div class="portrait"><img src="assets/images/Samitha Sir.jfif"
+                                alt="Resource person photograph awaiting upload"><span class="portraitbadge">RESEARCH
+                                GUIDANCE</span></div>
+                        <p class="eyebrow">Resource person</p>
+                        <h4>Mr. Samitha Vidhanarachchi</h4>
+                        <p class="status">School of Information Technology, Murdoch University, Australia </p>
+                    </article>
+                    <article>
+                        <div class="portrait"><img src="assets/images/Oshan sir.jfif"
+                                alt="External supervisor · CRI photograph awaiting upload"><span
+                                class="portraitbadge">RESEARCH GUIDANCE</span></div>
+                        <p class="eyebrow">External supervisor · CRI</p>
+                        <h4>Mr. Oshan Thilakarathne</h4>
+                        <p class="status">Coconut Research Institute Lunuwila, 
+Sri Lanka/p>
+                    </article>
+                </div>
+            </div>
+        </section>
+        <section id="fieldwork" class="wrap fieldwork">
+            <div class="sectionhead">
+                <div>
+                    <p class="eyebrow">FIELDWORK &amp; DATA COLLECTION</p>
+                    <h2>Research begins<br><em>in the field.</em></h2>
+                </div>
+                <p>Data collection activities at the Coconut Research Institute, Bandirippuwa, Sri Lanka.</p>
+            </div>
+            <article class="fieldcard"><a href="assets/images/field-data-collection.webp" target="_blank"
+                    rel="noopener"><img src="assets/images/field-data-collection.webp"
+                        alt="Collage of data collection at CRI Bandirippuwa showing coconut variety displays, field observations, coconut samples and the research team"
+                        loading="lazy"></a>
+                <div><span class="eyebrow">CRI · BANDIRIPPUWA</span>
+                    <h3>Connecting field observations to research</h3>
+                    <p>Our field visit brought the team together with coconut research personnel to observe germplasm
+                        diversity, examine coconut samples and collect field imagery. The germplasm component uses 428
+                        images collected at CRI, Bandirippuwa.</p><a class="textlink"
+                        href="assets/images/field-data-collection.webp" target="_blank" rel="noopener">View data
+                        collection gallery ↗</a>
+                </div>
+            </article>
+        </section>
+        <section id="recognition" class="recognition">
+            <div class="wrap">
+                <div class="sectionhead">
+                    <div>
+                        <p class="eyebrow">RESEARCH &amp; RECOGNITION</p>
+                        <h2>From research<br><em>to a wider community.</em></h2>
+                    </div>
+                    <p>Conference selection, poster presentation and participation certificates at ICDMIS 2026.</p>
+                </div>
+                <div class="recognitionlayout"><a class="conferencephoto" href="assets/images/conference-memories.webp"
+                        target="_blank" rel="noopener"><img src="assets/images/conference-memories.webp"
+                            alt="ICDMIS 2026 collage showing four researchers beside the R26-IT-019 poster, the conference venue and certificates of participation"
+                            loading="lazy"><span>View conference memories ↗</span></a>
+                    <div class="recognitioncards">
+                        <article><span class="recognitionnumber">01 / SELECTED</span>
+                            <h3>Selected for ICDMIS 2026</h3>
+                            <p>Our project was selected for the 3rd International Conference on Data Mining and
+                                Information Security, bringing our coconut-focused AI research to a wider academic
+                                audience.</p><span class="recognitionbadge">Conference selection</span>
+                        </article>
+                        <article><span class="recognitionnumber">02 / PRESENTED</span>
+                            <h3>Research poster presentation</h3>
+                            <p>The R26-IT-019 poster shared the four-component system, its methods and research findings
+                                with the conference community.</p><span class="recognitionbadge">Research
+                                dissemination</span>
+                        </article>
+                        <article><span class="recognitionnumber">03 / PARTICIPATION</span>
+                            <h3>Participation certificates received</h3>
+                            <p>Participating researchers received certificates of participation. The supplied conference
+                                collage records the poster presentation and certificates.</p><span
+                                class="recognitionbadge">Participation recognition</span>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="contact" class="contact">
+            <div class="wrap contactgrid">
+                <div>
+                    <p class="eyebrow">06 / CONTACT US</p>
+                    <h2>Let’s grow<br><em>the conversation.</em></h2>
+                    <p>For research enquiries, collaboration or academic feedback, contact the R26-IT-019 team.</p>
+                    <dl>
+                        <dt>Institution</dt>
+                        <dd>Sri Lanka Institute of Information Technology</dd>
+                        <dt>Project</dt>
+                        <dd>R26-IT-019 · AI-Enabled Coconut Land Utilization, WCLWD Severity 
+Assessment, Germplasm Identification and 
+Community Intelligence Advisory System </dd>
+                        <dt>Contact Email</dt>
+                        <dd>hasunwijerathne1999@gmail.com</dd>
+                        <dt>Phone</dt>
+                        <dd>+94 72 670 9198</dd>
+                    </dl>
+                </div>
+                <div class="emailtemplate messagecard">
+                    <h3>Send us a message</h3>
+                    <p>Tell us what you would like to discuss.</p>
+                    <form id="enquiry-form" action="#prepared-message" method="get"><label for="fullname">Full name
+                            *</label><input id="fullname" name="name" placeholder="Enter your full name"
+                            autocomplete="name" required><label for="email">Email address *</label><input type="email"
+                            id="email" name="email" placeholder="you@example.com" autocomplete="email" required><label
+                            for="subject">Subject</label><select id="subject" name="subject">
+                            <option>General enquiry</option>
+                            <option>Research collaboration</option>
+                            <option>Germplasm identification</option>
+                            <option>Aerial land utilization</option>
+                            <option>WCLWD severity assessment</option>
+                            <option>Disease advisory</option>
+                            <option>Academic feedback</option>
+                        </select><label for="message">Message *</label><textarea id="message" name="message"
+                            placeholder="Write your message here..." rows="5" required></textarea><button
+                            class="preparebutton" type="submit">Prepare message <span>↗</span></button></form>
+                    <div id="prepared-message" class="preparedmessage" tabindex="-1">
+                        <h4>Your prepared message</h4>
+                        <p>Copy this draft into your email client when the team contact address is available.</p>
+                        <textarea id="message-draft" aria-label="Prepared email draft" readonly></textarea>
+                    </div>
+                    <p class="formnote">No message is sent. Team email address awaiting confirmation.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="sitefooter">
+        <div class="wrap footergrid">
+            <div class="footeridentity"><a class="brand" href="#home"><img class="brandlogo"
+                        src="assets/images/coconut-logo.png" alt="Coconut project logo"><span>COCONUT
+                        INTELLIGENCE</span></a>
+                <p>Connecting coconut diversity, plantation potential and plant-health knowledge through four
+                    complementary AI research components.</p><span class="footerproject">R26-IT-019 · SLIIT · Sri
+                    Lanka</span>
+            </div>
+            <div>
+                <h3>Explore</h3><a href="#home">Home</a><a href="#domain">Research domain</a><a
+                    href="#milestones">Milestones</a><a href="#about">Our team &amp; guidance</a>
+            </div>
+            <div>
+                <h3>Research resources</h3><a href="documents/research-paper.pdf">Research paper ↗</a><a
+                    href="#documents">Individual theses</a><a href="#presentations">Presentation slides</a><a
+                    href="#recognition">Conference recognition</a>
+            </div>
+            <div>
+                <h3>Connect</h3><a href="#contact">Contact the team</a>
+                <p>Sri Lanka Institute of<br>Information Technology</p>
+                <p class="footeremail">Team email awaiting confirmation</p><a class="footertop" href="#home">Back to top
+                    ↑</a>
+            </div>
+        </div>
+        <div class="footerbottom">
+            <div><span>© 2026 R26-IT-019 Research Team</span><span>Research portfolio · HTML &amp;
+                    CSS</span><span>Conservation. Understanding. Possibility.</span></div>
+        </div>
+    </footer>
+    <script>
+        document.getElementById('enquiry-form').addEventListener('submit', function (event) {event.preventDefault(); var draft = 'Subject: ' + document.getElementById('subject').value + ' — R26-IT-019\n\nDear R26-IT-019 Research Team,\n\n' + document.getElementById('message').value + '\n\nKind regards,\n' + document.getElementById('fullname').value + '\n' + document.getElementById('email').value; document.getElementById('message-draft').value = draft; var panel = document.getElementById('prepared-message'); panel.classList.add('ready'); panel.focus();});
+    </script>
+</body>
+
+</html>
