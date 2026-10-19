@@ -701,7 +701,12 @@ Community Intelligence Advisory System </h3>
 Assessment, Germplasm Identification and 
 Community Intelligence Advisory System </dd>
                         <dt>Contact Email</dt>
-                        <dd>hasunwijerathne1999@gmail.com</dd>
+                        <dd>
+    <a href="https://mail.google.com/mail/?view=cm&fs=1&to=hasunwijerathne1999%40gmail.com"
+       target="_blank" rel="noopener noreferrer">
+        hasunwijerathne1999@gmail.com
+    </a>
+</dd>
                         <dt>Phone</dt>
                         <dd>+94 72 670 9198</dd>
                     </dl>
@@ -722,13 +727,12 @@ Community Intelligence Advisory System </dd>
                             <option>Disease advisory</option>
                             <option>Academic feedback</option>
                         </select><label for="message">Message *</label><textarea id="message" name="message"
-                            placeholder="Write your message here..." rows="5" required></textarea><button
-                            class="preparebutton" type="submit">Prepare message <span>↗</span></button></form>
-                    <div id="prepared-message" class="preparedmessage" tabindex="-1">
-                        <h4>Your prepared message</h4>
-                        <p>Copy this draft into your email client when the team contact address is available.</p>
-                        <textarea id="message-draft" aria-label="Prepared email draft" readonly></textarea>
-                    </div>
+                            placeholder="Write your message here..." rows="5" required></textarea><button class="preparebutton" type="submit">
+    Open in Gmail <span>↗</span>
+</button></form>
+                    <p class="formnote">
+    Opens your message in Gmail. Review it and click Send in Gmail.
+</p>
                     <p class="formnote">No message is sent. Team email address awaiting confirmation.</p>
                 </div>
             </div>
@@ -765,8 +769,41 @@ Community Intelligence Advisory System </dd>
         </div>
     </footer>
     <script>
-        document.getElementById('enquiry-form').addEventListener('submit', function (event) {event.preventDefault(); var draft = 'Subject: ' + document.getElementById('subject').value + ' — R26-IT-019\n\nDear R26-IT-019 Research Team,\n\n' + document.getElementById('message').value + '\n\nKind regards,\n' + document.getElementById('fullname').value + '\n' + document.getElementById('email').value; document.getElementById('message-draft').value = draft; var panel = document.getElementById('prepared-message'); panel.classList.add('ready'); panel.focus();});
-    </script>
+document.getElementById("enquiry-form").addEventListener("submit", function (event) {
+    event.preventDefault();
+
+    if (!this.reportValidity()) return;
+
+    const data = new FormData(this);
+    const name = String(data.get("name") || "").trim();
+    const email = String(data.get("email") || "").trim();
+    const subject = String(data.get("subject") || "General enquiry");
+    const message = String(data.get("message") || "").trim();
+
+    const body = [
+        "Hello R26-IT-019 team,",
+        "",
+        message,
+        "",
+        "Name: " + name,
+        "Contact email: " + email
+    ].join("\n");
+
+    const params = new URLSearchParams({
+        view: "cm",
+        fs: "1",
+        to: "hasunwijerathne1999@gmail.com",
+        su: subject,
+        body: body
+    });
+
+    window.open(
+        "https://mail.google.com/mail/?" + params.toString(),
+        "_blank",
+        "noopener,noreferrer"
+    );
+});
+</script>
 </body>
 
 </html>
